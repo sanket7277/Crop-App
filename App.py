@@ -25,3 +25,8 @@ if st.button("Suggest Crop"):
     prediction = model.predict(input_data)
     crop = le.inverse_transform(prediction)[0]
     st.success(f"✅ Recommended Crop: **{crop}**")
+st.markdown("---")
+st.markdown("**Developed by Sanket Kolhe**")
+st.set_page_config(page_title="Smart Crop App - Sanket Kolhe")
+
+
